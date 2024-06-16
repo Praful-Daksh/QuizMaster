@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="home-container">
+      <h1>Welcome to QuizMaster</h1>
+      <form id="quiz-form">
+        <div class="form-group">
+          <label for="category">Select Category</label>
+          <select id="category" name="category">
+            <option value="9">General Knowledge</option>
+            <option value="17">Science</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="18">Technology</option>
+            <option value="28">Vehicles</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Select Difficulty</label>
+          <select id="difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Number of Questions</label>
+          <input type="number" id="amount" name="amount" placeholder="0 ~ 50">
+        </div>
+        <button  class="start-button" id="submit">Start Quiz</button>
+      </form>
+    </div>
+  </main>
+  
+
+<script src="home.js"></script>
+</body>
+
+</html>
