@@ -10,14 +10,14 @@ function getFormDetails(e) {
   category = document.getElementById('category').value;
   difficulty = document.getElementById('difficulty').value;
   quesAmount = document.getElementById('amount').value;
-  if (category && difficulty && quesAmount) {
+  if (category && difficulty && quesAmount && quesAmount > 0 && quesAmount <= 50) {
     localStorage.setItem('category', category);
     localStorage.setItem('difficulty',difficulty);
     localStorage.setItem('quesAmount',quesAmount);
     window.location.href = 'quiz.html';
   }
   else{
-    alert('Fill your preferences ');
+    alert('Fill your preferences.\nQuestions should belongs to  1 ~ 50 ');
   }
 }
 
